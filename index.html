@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex fixed flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gray-900  border-white/[.5] text-sm py-3 sm:py-0" style="background-image: url(https://cinnamon.agency/images/noise.png);">
+        <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div class="flex items-center justify-between">
+            <a class="flex-none text-2xl font-semibold text-white" href="#" aria-label="Brand">CINNAMON</a>
+            <div class="sm:hidden">
+              <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border border-white/[.5] font-medium text-white/[.5] shadow-sm align-middle hover:bg-white/[.1] hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-10 sm:mt-0 sm:pl-7">
+              <a class="font-medium text-white sm:py-6" href="#" aria-current="page">Projects</a>
+              <a class="font-medium text-white hover:text-white sm:py-6" href="#">Services</a>
+              <a class="font-medium text-white hover:text-white sm:py-6" href="#">About us</a>
+              <a class="font-medium text-white hover:text-white sm:py-6" href="#">Careers</a>
+              <a class="font-medium text-white hover:text-white sm:py-6" href="#">Blog</a>
+      
+              <div class="sm:py-4 sm:px-2  hover:bg-white" style="background-color: #5135ff;">
+                <button type="button" class="flex items-center w-full text-white hover:text-blue-700  font-medium">
+                  CONTACT US
+               
+                </button>
+      
+                <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute top-full sm:border before:-top-5 before:left-0 before:w-full before:h-5">
+                  <a class="flex items-center gap-x-4 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                    About
+                  </a>
+                  <div class="hs-dropdown relative [--strategy:static] sm:[--strategy:absolute] [--adaptive:none] sm:[--trigger:hover]">
+                    <button type="button" class="w-full flex justify-between items-center text-sm text-gray-800 rounded-md py-2 px-3 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                      Sub Menu
+                      <svg class="sm:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                    </button>
+      
+                    <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] sm:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 sm:w-48 hidden z-10 sm:mt-2 bg-white sm:shadow-md rounded-lg p-2 dark:bg-gray-800 sm:dark:border dark:border-gray-700 dark:divide-gray-700 before:absolute sm:border before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
+                      <a class="flex items-center gap-x-4 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                        About
+                      </a>
+                      <a class="flex items-center gap-x-4 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                        Downloads
+                      </a>
+                      <a class="flex items-center gap-x-4 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                        Team Account
+                      </a>
+                    </div>
+                  </div>
+      
+                  <a class="flex items-center gap-x-4 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                    Downloads
+                  </a>
+                  <a class="flex items-center gap-x-4 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
+                    Team Account
+                  </a>
+                </div>
+              </div>
+      
+        
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="gray-900 w-full h-screen bg-gray-900 px-32 pb-12" style="background-image: url(https://cinnamon.agency/images/noise.png);">
+          <div class="pt-32 px-24">
+              <p class="text-white text-6xl font-bold items-center align-middle">Results focused designs &
+                  development agency.
+              </p>
+              <p class="py-6 text-gray-500 text-xl font-medium " style="width: 600px;">
+              Extend your team with our high performing specialists or hire us to shape your product from scratch. Either way, we’ll get your product off the ground and build a momentum for your success.
+      
+              </p>
+          </div>
+          <div class="w-40 h-40 bg-black shadow-md rounded-full shadow-white float-right" style="box-shadow: 3px 3px 10px 3px blue;">
+              <img class="w-full h-full" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdeloitte-badge.1a6faa3a.png&w=384&q=100"/>
+          </div>
+          <p class="text-white  mt-32 text-xl rotate-90">SEE OUR WORK</p>
+          
+          </div>
+      <div class="bg-white w-full my-32">
+          <div> 
+              <div class="bg-yellow-500 mx-32 w-4/5 py-8 px-20 h-fit">
+                  <img class="w-full h-full" src="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F2jr7RHJsFwOn3kEiUGEqAN%2F44d035a93444856bd117f168f348f59b%2FHero_Img__1_.png&w=1920&q=80"/>
+      
+              </div>
+            </div>
+            <div class="mx-32 ">
+            <p class="text-gray-700 font-bold my-8">IOS DEVELOPMENT</p>
+            <p class="w-2/5 text-gray-900 font-bold text-4xl">Smart Build:  Maximize your field survey</p>
+            <p class="text-gray-700 text-lg w-2/3 my-3">An application for construction management. Make manipulation over construction map and export report as a PDF document.</p>
+            </div>
+            
+      </div>
+      <div class="bg-white w-full my-12">
+        <div>
+          <div class="bg-green-300 mx-32 w-4/5 py-3 px-12 h-fit">
+            <img class="w-full h-full" src="https:////images.ctfassets.net/6mf4aqitzrkt/281NSZSG7VvkxHDig0qbBA/138576b35c7e45d8a07d60b96d5ff9b8/Mockup_1.png"/>
+          </div>
+        </div>
+        <div class="mx-32 ">
+          <div class="my-8 flex gap-12 text-sm">
+          <p class="text-gray-700 font-bold ">PRODUCT DESIGN</p>
+          <p class="text-gray-700 font-bold">QUALITY ASSURANCE</p>
+          </div>
+          <p class="w-2/5 text-gray-900 font-bold text-4xl">Corrily: Optimize prices to maximize revenue</p>
+          <p class="text-gray-700 text-lg w-2/3 my-3">Corrily tailors your prices and discounts to the needs of different user segments in order to increase your revenue. Cinnamon was tasked with creating a new visual identity for Corrily and incorporating a fresh, and stunning website redesign.</p>
+          </div>
+      </div>
+      <div class="bg-white w-full my-32">
+        <div>
+          <div class="bg-purple-900 mx-32 w-4/5 py-2 px-12 h-fit">
+            <img class="w-full h-full" src="https:////images.ctfassets.net/6mf4aqitzrkt/14zPgk0p1qf0yptSYRjHBW/4947a8f7fd5f73e727abbc7ab62e175a/Fiona_Thumbnail.png"/>
+          </div>
+        </div>
+        <div class="mx-32 ">
+          <div class="my-8 flex gap-12 text-sm">
+          <p class="text-gray-700 font-bold ">PRODUCT DESIGN</p>
+          <p class="text-gray-700 font-bold">WEB DEVELOPMENT</p>
+          </div>
+          <p class="w-1/3 text-gray-900 font-bold text-4xl">Fiona: Engage & Decide</p>
+          <p class="text-gray-700 text-lg w-2/3 my-3">Fiona is a fintech consumer-facing website that enables users to search for financial products, discover them, and receive personalized recommendations.</p>
+          </div>
+      </div>
+      <div class="mt-12 w-full text-white py-10 px-16 grid grid-cols-3 bg-gray-900" style="background-image: url(https://cinnamon.agency/images/noise.png);">
+<div class="text-center text-5xl font-bold">
+  Our services
+</div>
+<div class="items-center justify-center px-20 grid grid-rows-2">
+  <div>
+  <img class="items-center inline-flex" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-design.cdb049ad.png&w=48&q=75" alt="" srcset="">
+  <p class="font-medium text-xl">PRODUCT DESIGN</p>
+  <p class="py-8 text-lg text-gray-400">Producing, prototyping and testing sketches, high-fidelity wireframes and the final UI is a process that results in intuitive and impactful design that’s easy on the eyes.</p>
+</div>
+<div class="-mt-32">
+  <img class="items-center inline-flex" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fquality-assurance.9e7ba47b.png&w=48&q=75" alt="" srcset="">
+  <p class="font-medium text-xl">QUALITY ASSURANCE</p>
+  <p class="py-8 text-lg text-gray-400">Our QA engineering team makes your product bug-free, bulletproof and performance-driven through both automatic and manual testing.</p>
+</div>
+</div>
+<div class="items-center justify-center px-20 grid grid-rows-2 gap-12">
+<div>
+  <img class="items-center inline-flex" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevelopment.1440a123.png&w=48&q=75" alt="" srcset="">
+  <p class="font-medium text-xl">DEVELOPMENT</p>
+  <p class="py-8 text-lg text-gray-400">By selecting the befitting tech stack and architecture for the deliverable in question, we build out the product until it's a fully-fledged digital solution.</p>
+</div>
+<div>
+  <img class="items-center inline-flex" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarketing-and-growth.35184bb3.png&w=48&q=75" alt="" srcset="">
+  <p class="font-medium text-xl">Marketing & growth </p>
+  <p class="py-8 text-lg text-gray-400">By understanding the mechanics of digital marketing, we make sure to put your product, at the right time, in front of the right people.</p>
+</div>
+<button class="py-3 px-1 font-medium" style="background-color: #5135ff;">See our services</button>
+</div>
+</div>
+<div class="bg-gray-100 w-full pt-10 pb-48 pl-16">
+  <div class="grid grid-cols-2 gap-12">
+    <div class="px-24">
+      <p class="text-5xl items-center align-middle text-black font-bold">Agile team on demand</p>
+    </div>
+    <div class="items-center align-middle text-gray-800 px-32">
+      <p class="text-lg mt-8">By hiring and managing talented people with skills specific to your project, we build you a team that’s accomplished, agile and scalable in both directions.</p>
+      <div class="w-40 text-center text-white mt-6 font-medium py-2 px-2" style="background-color: #5135ff;;"><button class="font-medium"> See how it works</button></div>
+    </div>
+
+  </div>
+  <img class="float-right" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fagile-team-on-demand.fde9cd9c.png&w=384&q=75" alt="" srcset="">
+</div>
+<div class="bg-white py-20 px-24">
+ <p class="font-bold text-5xl w-9/12">Their team’s design skills definitely set them apart.</p>
+ <p class="text-xl text-gray-700 py-10 w-9/12">Wonderful experience; the project manager and the designer were available for all my questions and at no point did I feel they struggle to create the design.The result is a-b-s-o-l-u-t-e-l-y perfect. Top-notch!</p>
+<div class="inline-flex items-center gap-8">
+  <img class="w-20 h-20" src="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F2Do3nk7UOI5VuYzwCZFEK1%2F25e83085cd8548425d1b7f04438b641b%2FMicrosoftTeams-image__101_.png&w=1920&q=75" alt="" srcset="">
+<div>
+  <p class="font-bold text-gray-900 text-2xl">Eric, C</p>
+<p class="text-lg text-gray-700">Founder Websun Solutions UG. Berlin, Germany</p></div>
+</div>
+<div class="py-10 items-center flex gap-6">
+  <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" srcset="">
+<img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" srcset="">
+</div>
+</div>
+<div class="bg-gray-100 px-20 py-20">
+  <div class="grid grid-cols-2 py-10">
+    <div class="px-10">
+    <h2 class="text-5xl font-bold py-3">Who we are</h2>
+    <div class="items-center py-8 font-medium text-gray-900 text-xl">
+      <p class="py-3">Product design</p>
+      <p class="py-3">Web development</p>
+      <p class="py-3">Mobile development</p>
+      <p class="py-3">Quality assurance</p>
+      <p class="py-3">Marketing</p>
+      <p class="py-3">Project management</p>
+      <p class="py-3">Human resources</p>
+      <p class="py-3">Sales</p>
+      <p class="py-3">Fluffy friends</p>
+
+    </div>
+    </div>
+    <div class="items-center">
+      <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fproduct-design.d99a7923.jpg&w=640&q=75" alt="" srcset="">
+    <p class="py-6 text-gray-700 text-lg pr-10">Our exceptional designers make it their business to create logical, clean, and effective UX/UI for both web and mobile. Bringing together world-class technical skills and a plethora of creativity, they work with development teams to produce engaging and impactful digital experiences for the end user.</p>
+  <p class="py-4 text-gray-700 text-lg pr-10">Get closer to our Design Team and see what they have prepared for you in the <span style="color: #5135ff;">Design Dopamine Newsletter.</span></p>  
+  <div class="w-40 text-white font-medium text-center py-2 px-4" style="background-color: #5135ff;"><button class="font-medium"> Read About Us</button></div>
+  </div>
+  </div>
+</div>
+<div class="bg-white">
+  <div class="grid grid-cols-3">
+    <div class="px-20 py-20">
+      <img src="https://cinnamon.agency/_next/static/media/cinn-college.ec0e9db3.svg" alt="" srcset="">
+    </div>
+    <div class="px-12 py-20">
+      <p class="text-gray-700 text-lg">Seize the unique opportunity to participate in a wide range of courses conducted by professionals with an impeccable reputation in the digital industry.</p>
+      <div class="w-40 text-white my-4 font-medium text-center py-2 px-4" style="background-color: #5135ff;"><button class="font-medium"> Read About Us</button></div>
+    </div>
+    <div>
+      <img class="w-64 h-96 float-right" src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcinn-college-illustration.467e28ac.png&w=640&q=75" alt="" srcset="">
+    </div>
+  </div>
+</div>
+<div class=" w-full text-white py-16 px-16 bg-gray-900" style="background-image: url(https://cinnamon.agency/images/noise.png);">
+<div class="grid grid-cols-2">
+  <div class="px-8 py-4"><p class="text-white font-bold text-5xl items-center py-6">We're growing</p>
+  <p class="text-gray-200 w-3/4 text-lg">Jump on board with Cinnamon and get the privilege of working on challenging projects for leading global companies! Make the world a better, more connected place.</p>
+  </div>
+  <div class="py-6 px-16">
+    <div class="inline-flex items-center py-5 gap-8 border-b">
+    <p class="font-medium text-white text-2xl ">Flutter Development Team Lead</p>
+    <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FarrowRightWhite.ec432a63.png&w=48&q=75" alt="" srcset="">
+    </div>
+    <div class="inline-flex items-center py-5 gap-24 border-b">
+    <p class="font-medium text-white text-2xl ">Lead Generation Assistant</p>
+    <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FarrowRightWhite.ec432a63.png&w=48&q=75" alt="" srcset="">
+   </div>
+    <div class="inline-flex items-center py-5 gap-8 border-b">
+    <p class="font-medium text-white text-2xl">Mobile Development Team Lead</p>
+    <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FarrowRightWhite.ec432a63.png&w=48&q=75" alt="" srcset="">
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="bg-white py-16 px-32 w-full">
+  <p class="text-6xl font-bold py-10">Our offices</p>
+  <div class="grid grid-cols-2 gap-8">
+    <div>
+      <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fzagreb.b5180ce4.jpeg&w=640&q=75" alt="" srcset="">
+    <p class="pt-6 font-bold text-2xl"> Zagreb</p>
+    <p class="py-2 text-gray-600 text-lg">Slavonska avenija 6, 10000, Zagreb, Croatia</p>
+    </div>
+    <div>
+      <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnew-york.4d639475.jpeg&w=640&q=75" alt="" srcset="">
+      <p class="pt-6 font-bold text-2xl"> New York</p>
+      <p class="py-2 text-gray-600 text-lg">500 7th Ave, New York, NY 10018, United States</p>
+    </div>
+    <div class="flex gap-5 mb-10">
+    <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-left.cd95ba98.png&w=48&q=100" alt="" srcset="">
+  <img src="https://cinnamon.agency/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow-right.edcfdab6.png&w=48&q=100" alt="" srcset="">
+  </div>
+  
+</div>
+<div class="mt-24">
+  <p class="font-bold text-5xl w-1/3">Stay in the loop on tech topics</p>
+  <div class="grid grid-cols-2 gap-6 my-8">
+    <div>
+      <img src="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F65wOVh4m4auvvIRcMNL8pw%2Fa4194eb5b0ca4f57792dcc4f28dccb36%2FDigital_Renaissance.jpg&w=1920&q=75" alt="" srcset="">
+    <p class="py-3 text-sm font-bold">QA</p>
+    <p class="py-2 text-lg text-gray-700"> Juraj Baškarad 2023-05-17 6min</p>
+    <p class="text-2xl py-2 font-bold text-gray-900">Embracing the Digital Renaissance Part 1</p>
+    </div>
+    <div>
+      <img src="https://cinnamon.agency/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6mf4aqitzrkt%2F7fQ0ykFyeJs3QlAlybeipt%2F2ce1cf0aa96cc402817d6eca0a7fb557%2FFixed_Price_PM.jpg&w=1920&q=75" alt="" srcset="">
+      <p class="py-3 text-sm font-bold">PM</p>
+      <p class="py-2 text-lg text-gray-700"> Anamarija Macanga 2023-05-04 7min</p>
+      <p class="text-2xl py-2 text-gray-900 font-bold">Cracking the Code: Fixed-Price Project Success</p>
+    </div> 
+    <div class="inline-flex items-center gap-4">
+    <img src="https://cinnamon.agency/_next/static/media/arrowRight.6bd387a0.svg" alt="" srcset="">
+    <p style="color: #5135ff;" class="py-2 underline font-medium">VIEW MORE BLOGS</p>
+    </div>
+  </div>
+</div>
+</div>
+<div></div>
+<div class="bg-gray-100 w-full mt-10">
+  <div class="inline-flex items-center">
+    <img src="https://lh3.googleusercontent.com/A-Q20xvi41Tqj5-4zv8f_P9VOf3RhMuMOXxMLh6OPw9gCgHI4DbJRdf1FiVgTxnmU8Hxfr8I5A2xizB8u9_BrFvHU_0cG8C53mXngeY" alt="" srcset="">
+  <div class="px-10 items-center">
+    <p class="text-center text-5xl px-20 font-bold">Have a project in mind?
+    Let's work together.</p>
+    <div class="w-40 text-white my-4 mx-auto font-medium text-center py-2 px-4" style="background-color: #5135ff;"><button class="font-medium"> Read About Us</button></div>
+    </div>
+  </div>
+
+</div>
+<div class=" w-full text-white py-16 px-16 bg-gray-900" style="background-image: url(https://cinnamon.agency/images/noise.png);">
+<div class="grid grid-cols-2">
+  <div class="px-10">
+    <p class="text-white font-medium text-3xl py-6">CINNAMON</p>
+    <p class="font-medium py-1 text-lg">Home</p>
+    <p class="font-medium py-1 text-lg">Projects</p>
+    <p class="font-medium py-1 text-lg">Services</p>
+    <p class="font-medium py-1 text-lg">About Us</p>
+    <p class="font-medium py-1 text-lg">Careers</p>
+    <p class="font-medium py-1 text-lg">Blog</p>
+  </div>
+  <div>
+    <p class="text-white font-medium text-3xl py-6">All software, zero bullshit.</p>
+    <div class="grid grid-cols-3 py-4">
+      <div class="px-2">
+        <p class="text-lg font-medium">Zagreb</p>
+        <p class="text-gray-400 font-medium">Slavonska avenija 6, 10000, Zagreb, Croatia +385 95 382 9188</p>
+      </div>
+      <div class="px-2">
+        <p class="text-lg font-medium">New York</p>
+        <p class="text-gray-400 font-medium">500 7th Ave, New York, NY 10018, United States</p>
+      </div>
+      <div class="px-2">
+        <p class="text-lg font-medium">Belgrade</p>
+        <p class="text-gray-400 font-medium">Požeška 58 11000, Belgrade, Serbia</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ 
+
+</body>
+</html>
